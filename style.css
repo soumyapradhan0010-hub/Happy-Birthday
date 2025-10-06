@@ -7,12 +7,12 @@
     box-sizing: border-box;
 }
 :root{
-    --color-pink: #f7eafe;
-    --color-white: #ffffff;
+    --color-pink: #f8eafe;
+    --color-white: #fff;
     --color-black: #333;
-    --color-text-pink: #78ceff;
+    --color-text-pink: #FF7882;
     --color-heart: #FF7882;
-    --color-bg-letter: #fff8e4;
+    --color-bg-letter: #864199;
     --color-border: #DACCBF;
 }
 html{
@@ -39,7 +39,7 @@ body {
     display: flex;
     justify-content: space-between;
     transform: translateY(-200px);
-    animation: translateYFlag 1.5s 2s forwards;
+    animation: translateYFlag 1s 1s forwards;
 }
 @keyframes translateYFlag{
     to{
@@ -930,9 +930,9 @@ body {
     font-size: 25px;
     text-shadow: 0 0 8px #FF7882;
 }
-.boxMail .boxMail-container .card2:hover h3{
-    animation: texth3 2s forwards;
-    animation-delay: 2s;
+.boxMail.active .boxMail-container .card2 h3{
+    animation: texth3 3s forwards;
+    animation-delay: 1s;
     transition: 1s;
 }
 @keyframes texth3{
@@ -954,9 +954,9 @@ body {
     font-size: 22px;
     opacity: 0;
 }
-.boxMail .boxMail-container .card2:hover h2{
+.boxMail.active .boxMail-container .card2 h2{
     animation: texth2 2s forwards;
-    animation-delay: 2s;
+    animation-delay: 1s;
     transition: 1s;
 }
 @keyframes texth2{
@@ -976,8 +976,8 @@ body {
 }
 .boxMail .boxMail-container .card2 .card2-content:hover .imageCute2{
     animation: cute3 1s linear infinite,
-                cute4 3s 2s forwards;
-    animation-delay: 2s;
+                cute4 1s 2s forwards;
+    animation-delay: 1s;
     transition: 1s;
 }
 @keyframes cute3{
